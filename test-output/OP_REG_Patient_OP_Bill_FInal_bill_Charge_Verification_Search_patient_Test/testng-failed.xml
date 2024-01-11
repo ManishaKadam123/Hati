@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OP_REG_Patient_OP_Bill_FInal_bill_Charge_Verification_Search_patient_Test]">
+  <parameter name="Uesrid" value="11092023"/>
+  <test thread-count="5" name="OP_REG_Patient_OP_Bill_FInal_bill_Charge_Verification_Search_patient_Test(failed)">
+    <parameter name="QuickExparyDatePar" value="12/10/2036"/>
+    <parameter name="QuickAddNotesPar" value="Patient has Blood suger"/>
+    <parameter name="QuickPatientNotesPar" value="Feeling well"/>
+    <parameter name="QuickEncounterNotesPar" value="Patient need wheel chair"/>
+    <parameter name="QuickMobileNumberPar" value="8149596832"/>
+    <parameter name="QuickPrimaryIdNumberPar" value="1"/>
+    <parameter name="QuickDateOfBirthPar" value="12/02/1991"/>
+    <parameter name="QuickEncounterRemarksPar" value="Patient has favour not felling well"/>
+    <parameter name="QuickReferralRemarksPar" value="Overall patient condition is fine"/>
+    <parameter name="QuickFullNamePar" value="Aisyah"/>
+    <classes>
+      <class name="BillingTest.OP_REG_Patient_OP_Bill_FInal_bill_Charge_Verification_Search_patient_Test">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="beforeTest"/>
+          <include name="FailedScreenShot"/>
+          <include name="TC_03_Verify_That_User_Can_Verify_That_Charge_Verification_For_OP_BILL"/>
+        </methods>
+      </class> <!-- BillingTest.OP_REG_Patient_OP_Bill_FInal_bill_Charge_Verification_Search_patient_Test -->
+    </classes>
+  </test> <!-- OP_REG_Patient_OP_Bill_FInal_bill_Charge_Verification_Search_patient_Test(failed) -->
+</suite> <!-- Failed suite [OP_REG_Patient_OP_Bill_FInal_bill_Charge_Verification_Search_patient_Test] -->

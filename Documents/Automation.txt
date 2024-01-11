@@ -1,0 +1,196 @@
+import { By, WebDriver, Key , until, Actions, WebElement} from 'selenium-webdriver';
+import {driver} from "../../Driver/webdriver";
+import {formToJSON} from "axios";
+const timeoutMilliseconds = 120000;
+export class Registeration {
+driver: WebDriver;
+private tab1: By = By.id("tab1");
+private tab2: By = By.id("tab2");
+private tab3: By = By.id("tab3");
+private tab4: By = By.id("tab4");
+private tab5: By = By.id("tab5");
+private tab6: By = By.id("tab6");
+private tab7: By = By.id("tab7");
+private tab8: By = By.id("tab8");
+private Menu: By = By.css("mat-icon[role='img']");
+private opd: By = By.xpath('//*[@id="mat-menu-panel-1"]/div/div/div[1]/div[1]/div[1]/div/img');
+private sidebar: By = By.xpath('/html/body/app-root/app-layout/ng-sidebar-container/ng-sidebar/aside/app-sidebar/app-menu/ul/li[1]/a');
+private option: By = By.xpath('//*[@id="2004"]');
+private option2: By = By.xpath('//*[@id="2005"]');
+private Patient: By = By.xpath('//*[@id="Add Patient"]/span[1]/mat-icon');
+private selectval: By = By.css("mat-select[formcontrolname='primaryId']");
+private passport: By = By.css("input[aria-label='dropdown search']");
+private PrimeryIDNumber: By = By.xpath('//*[@id="mat-input-16"]');
+ private ExpiryDate: By = By.xpath('//*[@id="mat-input-17"]');
+ private Title: By = By.css("app-master-form-field[ng-reflect-label='Title']");
+ private Titleopt: By = By.css("input[aria-label='dropdown search']");
+ private FullNmae: By = By.xpath('//*[@id="mat-input-21"]');
+ private GenderOpt: By = By.css("mat-select[ng-reflect-name='gender']");
+ private Gendesend: By = By.css("input[aria-label='dropdown search']");
+ private dateOfBirth: By = By.css("input[formcontrolname='dateOfBirth']"); 
+private address: By = By.css("input[formcontrolname='addressPrimary']");
+ private countryPrimary: By = By.css("mat-select[ng-reflect-name='countryPrimary']"); 
+private search: By = By.css("input[aria-label='dropdown search']");
+ private state: By = By.css("mat-select[ng-reflect-name='statePrimary']");
+ private statesend: By = By.css("input[aria-label='dropdown search']"); 
+private City: By = By.css("mat-select[ ng-reflect-name='cityPrimary']");
+ private Citysend: By = By.css("input[aria-label='dropdown search']"); 
+private post: By = By.css("input[formcontrolname='pincodePrimary']"); 
+private CountryCode: By = By.css("mat-select[ ng-reflect-name='countryCodemobile']");
+ private CountryCodesend: By = By.css("input[aria-label='dropdown search']"); 
+private mobileNumber: By = By.css("input[ng-reflect-name='mobileNumber']");
+ private Save: By = By.css("mat-icon[ng-reflect-message='Save']");
+ private Yes: By = By.css("mat-icon[ng-reflect-message='Yes']"); 
+private Encounter: By = By.xpath('//*[@id="mat-tab-label-0-0"]/div');
+ private Doctor: By = By.xpath('//*[@id="mat-select-value-25"]/span'); 
+private Speciality: By = By.xpath('//*[@id="mat-select-value-29"]');
+ private Tarrif: By = By.xpath('//*[@id="mat-select-value-61"]'); 
+private Doctorsend: By = By.css("input[aria-label='dropdown search']");
+ private Specialitysend: By = By.css("input[aria-label='dropdown search']");
+ private Tarrifsend: By = By.css("input[aria-label='dropdown search']"); 
+private EncounterSave: By = By.xpath('//*[@id="Save Encounter"]/span[1]/mat-icon');
+ private Encountertype: By = By.xpath('//*[@id="mat-select-value-27"]'); 
+private Encountertypesend: By = By.css("input[aria-label='dropdown search']"); 
+private containerq: By = By.xpath('/html/body/app-root/app-layout/ng-sidebar-container/div/div/app-header/nav/div[2]/mat-icon');
+ private inppput: By = By.xpath('//*[@id="mat-input-13"]'); private inppput2: By = By.xpath('//*[@id="mat-input-21"]');
+ private subbbmit2: By = By.xpath('//*[@id="mat-menu-panel-6"]/div/div/form/div[7]/div[2]/button[1]');
+ private subbbmit: By = By.xpath('//*[@id="mat-menu-panel-6"]/div/div/form/div[10]/div[2]/button[1]'); 
+private bullet: By = By.xpath('/html/body/app-root/app-layout/ng-sidebar-container/div/div/mat-drawer-container/mat-drawer-content/div/div/app-patient-registration/app-patient-search/div/div/div/table/tbody/tr[1]/td[1]');
+ private bullet2: By = By.xpath('/html/body/app-root/app-layout/ng-sidebar-container/div/div/mat-drawer-container/mat-drawer-content/div/div/app-opdbill/app-patient-search/div/div/div/table/tbody/tr[1]/td[1]'); 
+private bill: By = By.xpath('//*[@id="mat-menu-panel-1"]/div/div/div[1]/div[1]/div[2]'); private OPbill: By = By.xpath('//*[@id="mat-tab-content-0-0"]/div/div[1]/mat-grid-list/div/mat-grid-tile[1]/div/button/span'); 
+private SericeName: By = By.xpath('//*[@id="mat-input-23"]'); 
+private Checkbox: By = By.xpath('//*[@id="mat-tab-content-1-0"]/div/div/div/table/tbody/tr/td[2]'); 
+private Checkbox2: By = By.xpath('//*[@id="Final Bill"]/label/span[1]');
+private savebill: By = By.xpath('/html/body/app-root/app-layout/ng-sidebar-container/div/div/mat-drawer-container/mat-drawer-content/div/div/app-opdbill/div[4]/div/div/div[2]/mat-grid-list/div/mat-grid-tile[2]/div/div[2]/button/span[1]/mat-icon'); 
+private saveyes: By = By.xpath('//*[@id="mat-dialog-0"]/app-dynamic-confirm-dialog/div/form/div[3]/div/button[1]');
+ private addpat: By = By.xpath('//*[@id="mat-dialog-1"]/app-billing-payment-dialog/div/form/div[2]/div/div[5]/form/mat-grid-list/div/mat-grid-tile[4]/div/button/span[1]/mat-icon'); 
+private Ammontsave: By = By.xpath('//*[@id="mat-dialog-1"]/app-billing-payment-dialog/div/form/div[3]/form/mat-grid-list/div/mat-grid-tile[5]/div/button/span[1]/mat-icon');
+ private Confirmlats: By = By.xpath('//*[@id="mat-dialog-2"]/app-confirm-dialog/div/form/div[3]/div/button[1]'); 
+private Cooonf: By = By.xpath('//*[@id="mat-dialog-0"]/app-regsuccess-dialog/div/div[3]/div/button[1]/span[1]/mat-icon');
+
+ constructor(driver: WebDriver)
+
+ { this.driver = driver; }
+
+ async MenuOPD(): Promise { await driver.findElement(this.Menu).click(); 
+await driver.sleep(4000)
+ await driver.findElement(this.opd).click(); 
+await driver.sleep(8000); }
+ async MenuOPDsecond(): Promise { await driver.findElement(this.Menu).click();
+ await driver.sleep(3000); 
+await driver.findElement(this.opd).click(); await driver.sleep(6000); }
+ async MenuOPDthird(): Promise { await driver.findElement(this.Menu).click(); await driver.sleep(3000);
+ await driver.findElement(this.bill).click(); await driver.sleep(13000); await driver.findElement(this.OPbill).click();
+ await driver.sleep(4000) await driver.findElement(this.containerq).click(); 
+await driver.sleep(9000)
+ await driver.findElement(this.inppput2).sendKeys('TESTSMEDCARESSSS'); 
+await driver.sleep(1000) await driver.findElement(this.subbbmit2).click();
+ await driver.sleep(5000) // await driver.findElement(this.bullet2).click(); 
+// await driver.sleep(4000); 
+// await driver.findElement(this.SericeName).sendKeys('Dengue IgG') // await driver.sleep(2000);
+ // await driver.findElement(this.SericeName).sendKeys(Key.ARROW_DOWN, Key.ENTER); 
+// await driver.findElement(this.SericeName).sendKeys(Key.ENTER); 
+// await driver.sleep(4000); await driver.findElement(this.Checkbox).click(); await driver.sleep(2000); 
+await driver.findElement(this.Checkbox2).click(); 
+await driver.sleep(2000);
+ await driver.findElement(this.savebill).click(); await driver.sleep(4000); 
+await driver.findElement(this.saveyes).click(); await driver.sleep(6000);
+ await driver.findElement(this.addpat).click(); await driver.sleep(4000);
+ await driver.findElement(this.Ammontsave).click(); await driver.sleep(4000); 
+await driver.findElement(this.Confirmlats).click();
+
+ } 
+async SelectRegisteration(): Promise
+ { 
+const sid = await driver.findElement(this.sidebar); 
+const actions = driver.actions({bridge: true}); 
+await actions.move({origin: sid}).perform(); 
+await actions.perform(); await driver.sleep(8000); 
+await driver.findElement(this.option).click(); 
+await driver.sleep(8000); 
+await driver.findElement(this.option2).click();
+ } async SelectRegisterationsecond(): Promise
+ { const sid = await driver.findElement(this.sidebar);
+ const actions = driver.actions({bridge: true});
+ await actions.move({origin: sid}).perform(); 
+await actions.perform(); await driver.sleep(8000);
+ await driver.findElement(this.option).click();
+ await driver.sleep(6000);
+ await driver.findElement(this.option2).click();
+
+ } 
+
+async Addpatient(): Promise 
+{ 
+await driver.findElement(this.Patient).click(); 
+await driver.sleep(8000) 
+} 
+async BasicInformation(): Promise 
+{ 
+await driver.findElement(this.selectval).click();
+ await driver.sleep(5000) 
+await driver.findElement(this.passport).sendKeys('Passport'); 
+await driver.sleep(2000) await driver.findElement(this.passport).sendKeys(Key.ENTER); 
+await driver.findElement(this.PrimeryIDNumber).sendKeys(123) await driver.findElement(this.ExpiryDate).sendKeys('18/09/2023'); 
+await driver.findElement(this.Title).click();
+ await driver.sleep(2500); await driver.findElement(this.Titleopt).sendKeys('Tan Sri Datuk');
+ await driver.findElement(this.Titleopt).sendKeys(Key.ARROW_DOWN, Key.ENTER); 
+await driver.findElement(this.FullNmae).sendKeys('TESTSMEDCARESSSS'); 
+await driver.findElement(this.GenderOpt).click(); await driver.sleep(2500); 
+await driver.findElement(this.Gendesend).sendKeys('MALE'); await driver.sleep(2000);
+ await driver.findElement(this.Gendesend).sendKeys(Key.ARROW_DOWN, Key.ENTER); 
+await driver.findElement(this.dateOfBirth).sendKeys('18/09/2023'); 
+await driver.findElement(this.address).sendKeys('asd') 
+await driver.findElement(this.countryPrimary).click(); 
+await driver.findElement(this.search).sendKeys('Malaysia');
+await driver.findElement(this.search).sendKeys(Key.ARROW_DOWN, Key.ENTER); 
+await driver.sleep(2500); 
+await driver.findElement(this.state).click(); 
+await driver.sleep(1000); 
+await driver.findElement(this.statesend).sendKeys('Kedah'); 
+await driver.sleep(1000); 
+await driver.findElement(this.statesend).sendKeys(Key.ARROW_DOWN, Key.ENTER);
+ await driver.sleep(3500); 
+await driver.findElement(this.City).click(); 
+await driver.sleep(2000); 
+await driver.findElement(this.Citysend).sendKeys('Kulim');
+ await driver.sleep(1000); 
+await driver.findElement(this.Citysend).sendKeys(Key.ARROW_DOWN, Key.ENTER);
+ await driver.findElement(this.post).sendKeys('12345'); 
+await driver.findElement(this.CountryCode).click(); 
+await driver.findElement(this.CountryCodesend).sendKeys('+355'); 
+await driver.findElement(this.CountryCodesend).sendKeys(Key.ARROW_DOWN, Key.ENTER); 
+await driver.findElement(this.mobileNumber).sendKeys('1234567897');
+ await driver.findElement(this.Save).click(); 
+await driver.findElement(this.Yes).click(); 
+await driver.sleep(6000) } async Login(Userid: number): Promise { await driver.findElement(this.tab1).sendKeys(Userid); await driver.findElement(this.tab2).sendKeys(Userid); 
+await driver.findElement(this.tab3).sendKeys(Userid); 
+await driver.findElement(this.tab4).sendKeys(Userid); 
+await driver.findElement(this.tab5).sendKeys(Userid); 
+await driver.findElement(this.tab6).sendKeys(Userid); 
+await driver.findElement(this.tab7).sendKeys(Userid);
+ await driver.findElement(this.tab8).sendKeys(Userid);
+ } async Encounterfun(): Promise { await driver.sleep(8000) await driver.findElement(this.containerq).click(); await driver.sleep(4000) 
+await driver.findElement(this.inppput).sendKeys('TESTSMEDCARESSSS');
+ await driver.findElement(this.subbbmit).click(); await driver.sleep(3000) 
+// await driver.findElement(this.bullet).click(); 
+// await driver.sleep(4000)
+ await driver.findElement(this.Encounter).click(); 
+await driver.sleep(4000) 
+await driver.findElement(this.Encountertype).click(); 
+await driver.sleep(1000) 
+await driver.findElement(this.Encountertypesend).sendKeys('New Case'); 
+await driver.sleep(500) 
+await driver.findElement(this.Encountertypesend).sendKeys(Key.ARROW_DOWN, Key.ENTER); 
+await driver.sleep(2000) 
+await driver.findElement(this.Speciality).click(); 
+await driver.sleep(2000) 
+await driver.findElement(this.Specialitysend).sendKeys('General Surgery'); await driver.sleep(2000) await driver.findElement(this.Specialitysend).sendKeys(Key.ARROW_DOWN, Key.ENTER); await driver.sleep(2000) 
+await driver.findElement(this.Doctor).click(); 
+await driver.sleep(2000) 
+await driver.findElement(this.Doctorsend).sendKeys('Dr. Micheal Tan'); await driver.sleep(2000) 
+await driver.findElement(this.Doctorsend).sendKeys(Key.ARROW_DOWN, Key.ENTER); 
+await driver.sleep(2000) await driver.findElement(this.Tarrif).click(); 
+await driver.sleep(3000) await driver.findElement(this.Tarrifsend).sendKeys('Self Tariff'); 
+await driver.sleep(2000) await driver.findElement(this.Tarrifsend).sendKeys(Key.ARROW_DOWN, Key.ENTER);
+await driver.sleep(2000) await driver.findElement(this.EncounterSave).click(); await driver.sleep(2000) await driver.findElement(this.Cooonf).click(); await driver.sleep(6000) } }

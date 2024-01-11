@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="navigator-link">
+              <span class="suite-name border-failed">ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="navigator-link ">
+                    <span>C:\Users\Manisha\git\MDemoRepository_44\Medcare_Hati\BillingXML\ADT_Req_Patient_Deposit_Refund_IP_Final_Bill_Patient_Ledger_View_Ledger_Test.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 4 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="hide-methods failed suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund"> (hide)</a> <!-- hide-methods failed suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund -->
+                      <a href="#" panel-name="suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="show-methods failed suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund"> (show)</a> <!-- show-methods failed suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund -->
+                    </span>
+                    <div class="method-list-content failed suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" title="BillingTest.ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="method navigator-link" hash-for-method="TC_02_User_Able_To_Do_AdmissionRequestform(11, Ray, 01/10/2036, 05/07/1994, 9503238070, Patilaksh1994@gmail.com, 03/11/2023, 3, Testing, Testin...)">TC_02_User_Able_To_Do_AdmissionRequestform(11, Ray, 01/10/2036, 05/07/1994, 9503238070, Patilaksh1994@gmail.com, 03/11/2023, 3, Testing, Testin...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" title="BillingTest.ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="method navigator-link" hash-for-method="TC_03_User_Able_to_Do_ADTRegistartionForm(Pune)">TC_03_User_Able_to_Do_ADTRegistartionForm(Pune)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" title="BillingTest.ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="method navigator-link" hash-for-method="TC_04_Verify_User_Can_Fill_ADT_Admission_Form(2, Admitting Diagnosis testing, Require Urgent Oxyzen, Blood require, All Done good, 1234, Overall g...)">TC_04_Verify_User_Can_Fill_ADT_Admission_Form(2, Admitting Diagnosis testing, Require Urgent Oxyzen, Blood require, All Done good, 1234, Overall g...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" title="BillingTest.ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="method navigator-link" hash-for-method="TC_05_Verify_Taht_User_is_Able_To_Add_Deposit_Against_Patient_Save_refund">TC_05_Verify_Taht_User_is_Able_To_Add_Deposit_Against_Patient_Save_refund</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="hide-methods passed suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund"> (hide)</a> <!-- hide-methods passed suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund -->
+                      <a href="#" panel-name="suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="show-methods passed suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund"> (show)</a> <!-- show-methods passed suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund -->
+                    </span>
+                    <div class="method-list-content passed suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" title="BillingTest.ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="method navigator-link" hash-for-method="TC_01_Verify_Login(11092023)">TC_01_Verify_Login(11092023)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="panel ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund">
+          <div class="suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">BillingTest.ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_02_User_Able_To_Do_AdmissionRequestform(11, Ray, 01/10/2036, 05/07/1994, 9503238070, Patilaksh1994@gmail.com, 03/11/2023, 3, Testing, Testin...)">
+                  </a> <!-- TC_02_User_Able_To_Do_AdmissionRequestform(11, Ray, 01/10/2036, 05/07/1994, 9503238070, Patilaksh1994@gmail.com, 03/11/2023, 3, Testing, Testin...) -->
+                  <span class="method-name">TC_02_User_Able_To_Do_AdmissionRequestform</span>
+                  <span class="parameters">(11,Ray,01/10/2036,05/07/1994,9503238070,Patilaksh1994@gmail.com,03/11/2023,3,Testing,Testing)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;mat-icon[ng-reflect-message=&apos;Add Admission Request&apos;]&quot;}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.0&apos;, revision: &apos;15400459dd*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Manisha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64354}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64354/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b4df22983b3b1dcc94db127a91722381
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at ADTPages.ADTRequestForm.ADTFORREQUEST(ADTRequestForm.java:161)
+	at BillingTest.ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund.TC_02_User_Able_To_Do_AdmissionRequestform(ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_03_User_Able_to_Do_ADTRegistartionForm(Pune)">
+                  </a> <!-- TC_03_User_Able_to_Do_ADTRegistartionForm(Pune) -->
+                  <span class="method-name">TC_03_User_Able_to_Do_ADTRegistartionForm</span>
+                  <span class="parameters">(Pune)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;mat-select[ng-reflect-name=&apos;countryPrimary&apos;]&quot;}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.0&apos;, revision: &apos;15400459dd*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Manisha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64354}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64354/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b4df22983b3b1dcc94db127a91722381
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at ADTPages.AdmissionRegScreen.Registration(AdmissionRegScreen.java:88)
+	at BillingTest.ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund.TC_03_User_Able_to_Do_ADTRegistartionForm(ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_04_Verify_User_Can_Fill_ADT_Admission_Form(2, Admitting Diagnosis testing, Require Urgent Oxyzen, Blood require, All Done good, 1234, Overall g...)">
+                  </a> <!-- TC_04_Verify_User_Can_Fill_ADT_Admission_Form(2, Admitting Diagnosis testing, Require Urgent Oxyzen, Blood require, All Done good, 1234, Overall g...) -->
+                  <span class="method-name">TC_04_Verify_User_Can_Fill_ADT_Admission_Form</span>
+                  <span class="parameters">(2,Admitting Diagnosis testing,Require Urgent Oxyzen,Blood require,All Done good,1234,Overall good,Sandra,1236540,9921084463,Pune,3265)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input[formcontrolname=&apos;admissionTime&apos;]&quot;}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.0&apos;, revision: &apos;15400459dd*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b4df22983b3b1dcc94db127a91722381, findElement {using=css selector, value=input[formcontrolname=&apos;admissionTime&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Manisha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64354}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64354/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b4df22983b3b1dcc94db127a91722381
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at ADTPages.ADTAdmissionForm_WIth_Reg.ADT_Admission_Form(ADTAdmissionForm_WIth_Reg.java:219)
+	at BillingTest.ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund.TC_04_Verify_User_Can_Fill_ADT_Admission_Form(ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_05_Verify_Taht_User_is_Able_To_Add_Deposit_Against_Patient_Save_refund">
+                  </a> <!-- TC_05_Verify_Taht_User_is_Able_To_Add_Deposit_Against_Patient_Save_refund -->
+                  <span class="method-name">TC_05_Verify_Taht_User_is_Able_To_Add_Deposit_Against_Patient_Save_refund</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;mat-menu-panel-16&apos;]/div/div/div[1]/div[1]/div[3]/div/span&quot;}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.16.0&apos;, revision: &apos;15400459dd*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b4df22983b3b1dcc94db127a91722381, findElement {using=xpath, value=//*[@id=&apos;mat-menu-panel-16&apos;]/div/div/div[1]/div[1]/div[3]/div/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Manisha\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64354}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64354/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b4df22983b3b1dcc94db127a91722381
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at BillingPages.ADT_Admission_Form_save_Admission_Deposit_Add_Against_Patient_Save_Refund.IPD_Patient_Deposit_Add_Agains_Patient_Save_Refund(ADT_Admission_Form_save_Admission_Deposit_Add_Against_Patient_Save_Refund.java:152)
+	at BillingTest.ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund.TC_05_Verify_Taht_User_is_Able_To_Add_Deposit_Against_Patient_Save_refund(ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund-class-failed -->
+          <div class="suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">BillingTest.ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_01_Verify_Login(11092023)">
+                  </a> <!-- TC_01_Verify_Login(11092023) -->
+                  <span class="method-name">TC_01_Verify_Login</span>
+                  <span class="parameters">(11092023)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund-class-passed -->
+        </div> <!-- panel ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund -->
+        <div panel-name="test-xml-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Manisha\git\MDemoRepository_44\Medcare_Hati\BillingXML\ADT_Req_Patient_Deposit_Refund_IP_Final_Bill_Patient_Ledger_View_Ledger_Test.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund&quot;&gt;
+  &lt;parameter name=&quot;Uesrid&quot; value=&quot;11092023&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund&quot;&gt;
+    &lt;parameter name=&quot;PrimaryIdNumber12&quot; value=&quot;11&quot;/&gt;
+    &lt;parameter name=&quot;PostcodeParAdetailsPar&quot; value=&quot;Pune&quot;/&gt;
+    &lt;parameter name=&quot;IdentificationNOPar&quot; value=&quot;1236540&quot;/&gt;
+    &lt;parameter name=&quot;DOBPar&quot; value=&quot;05/07/1994&quot;/&gt;
+    &lt;parameter name=&quot;DateOfBirthPar&quot; value=&quot;15/02/1990&quot;/&gt;
+    &lt;parameter name=&quot;RemarksPar&quot; value=&quot;Testing&quot;/&gt;
+    &lt;parameter name=&quot;BillEstimationPar&quot; value=&quot;1234&quot;/&gt;
+    &lt;parameter name=&quot;SecondaryIdNumber12&quot; value=&quot;203569875&quot;/&gt;
+    &lt;parameter name=&quot;LengthPar&quot; value=&quot;3&quot;/&gt;
+    &lt;parameter name=&quot;PostCodePar12&quot; value=&quot;75996&quot;/&gt;
+    &lt;parameter name=&quot;AdmissionRemarksPar&quot; value=&quot;All Done good&quot;/&gt;
+    &lt;parameter name=&quot;ReferralRemarksPar&quot; value=&quot;Overall good&quot;/&gt;
+    &lt;parameter name=&quot;WorkFaxpar&quot; value=&quot;2036541&quot;/&gt;
+    &lt;parameter name=&quot;HomeContactNopar&quot; value=&quot;7599633265&quot;/&gt;
+    &lt;parameter name=&quot;EncounterRemarksPar&quot; value=&quot;Patient has favour&quot;/&gt;
+    &lt;parameter name=&quot;WorkContactNopar&quot; value=&quot;8156896532&quot;/&gt;
+    &lt;parameter name=&quot;PriNumberPar&quot; value=&quot;8498&quot;/&gt;
+    &lt;parameter name=&quot;LengthOfStayPar&quot; value=&quot;2&quot;/&gt;
+    &lt;parameter name=&quot;AdmittingDiagPar&quot; value=&quot;Admitting Diagnosis testing&quot;/&gt;
+    &lt;parameter name=&quot;WorkFromPar&quot; value=&quot;15/02/2023&quot;/&gt;
+    &lt;parameter name=&quot;SecondaryExparyDatePar&quot; value=&quot;15/12/2036&quot;/&gt;
+    &lt;parameter name=&quot;MobilePar&quot; value=&quot;9503238070&quot;/&gt;
+    &lt;parameter name=&quot;ExparyDatePar&quot; value=&quot;15/12/2036&quot;/&gt;
+    &lt;parameter name=&quot;PhoneNoPar&quot; value=&quot;9975223366&quot;/&gt;
+    &lt;parameter name=&quot;MobileNumberPar&quot; value=&quot;7569206892&quot;/&gt;
+    &lt;parameter name=&quot;Emailpar&quot; value=&quot;hati@intel.com&quot;/&gt;
+    &lt;parameter name=&quot;AddNotesPar&quot; value=&quot;Require Urgent Oxyzen&quot;/&gt;
+    &lt;parameter name=&quot;PatientNotes&quot; value=&quot;Patient has Blood suger&quot;/&gt;
+    &lt;parameter name=&quot;PostCodePar&quot; value=&quot;52369874&quot;/&gt;
+    &lt;parameter name=&quot;NotesPar&quot; value=&quot;Testing&quot;/&gt;
+    &lt;parameter name=&quot;PersonalFaxpar&quot; value=&quot;523641&quot;/&gt;
+    &lt;parameter name=&quot;ResAddPar&quot; value=&quot;Mumbai&quot;/&gt;
+    &lt;parameter name=&quot;DOAPar&quot; value=&quot;03/11/2023&quot;/&gt;
+    &lt;parameter name=&quot;ExpiryDatePar&quot; value=&quot;01/10/2036&quot;/&gt;
+    &lt;parameter name=&quot;AddressPar&quot; value=&quot;Pune&quot;/&gt;
+    &lt;parameter name=&quot;PatientNotesPar&quot; value=&quot;Blood require&quot;/&gt;
+    &lt;parameter name=&quot;NamePar&quot; value=&quot;Sandra&quot;/&gt;
+    &lt;parameter name=&quot;ZipCodePar&quot; value=&quot;3265&quot;/&gt;
+    &lt;parameter name=&quot;PhoneNumberPar&quot; value=&quot;9921084463&quot;/&gt;
+    &lt;parameter name=&quot;PatientNamePar&quot; value=&quot;Ray&quot;/&gt;
+    &lt;parameter name=&quot;MotherNamePar&quot; value=&quot;harry&quot;/&gt;
+    &lt;parameter name=&quot;FullNamePar&quot; value=&quot;Aishah&quot;/&gt;
+    &lt;parameter name=&quot;ContactNumberPar&quot; value=&quot;8156896532&quot;/&gt;
+    &lt;parameter name=&quot;EmploymentNoPar&quot; value=&quot;2036&quot;/&gt;
+    &lt;parameter name=&quot;EmailPar&quot; value=&quot;Patilaksh1994@gmail.com&quot;/&gt;
+    &lt;parameter name=&quot;ResidentialAddressPar&quot; value=&quot;Pune&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;BillingTest.ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund --&gt;
+&lt;/suite&gt; &lt;!-- ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund');
+function tableData_ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TC_02_User_Able_To_Do_AdmissionRequestform')
+data.setCell(0, 2, 'BillingTest.ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund')
+data.setCell(0, 3, 17783);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC_05_Verify_Taht_User_is_Able_To_Add_Deposit_Against_Patient_Save_refund')
+data.setCell(1, 2, 'BillingTest.ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund')
+data.setCell(1, 3, 7342);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC_04_Verify_User_Can_Fill_ADT_Admission_Form')
+data.setCell(2, 2, 'BillingTest.ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund')
+data.setCell(2, 3, 7305);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC_01_Verify_Login')
+data.setCell(3, 2, 'BillingTest.ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund')
+data.setCell(3, 3, 3370);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC_03_User_Able_to_Do_ADTRegistartionForm')
+data.setCell(4, 2, 'BillingTest.ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund')
+data.setCell(4, 3, 3022);
+window.suiteTableData['ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund']= { tableData: data, tableDiv: 'times-div-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <div id="times-div-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund">
+              </div> <!-- times-div-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">BillingTest.ADTRequested_save_Admission_Deposit_Add_against_patient_Save_Refund</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">startBrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">TC_01_Verify_Login(11092023)</span>
+                <span class="method-start">9546 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">FailedScreenShot([TestResult name=TC_01_Verify_Login status=SUCCESS method=ADTRequested_save_Admission_Deposit_Add_ag...)</span>
+                <span class="method-start">12920 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_02_User_Able_To_Do_AdmissionRequestform(11, Ray, 01/10/2036, 05/07/1994, 9503238070, Patilaksh1994@gmail.com, 03/11/2023, 3, Testing, Testin...)</span>
+                <span class="method-start">12929 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">FailedScreenShot([TestResult name=TC_02_User_Able_To_Do_AdmissionRequestform status=FAILURE method=ADTRequested_save_...)</span>
+                <span class="method-start">30712 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_03_User_Able_to_Do_ADTRegistartionForm(Pune)</span>
+                <span class="method-start">30945 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">FailedScreenShot([TestResult name=TC_03_User_Able_to_Do_ADTRegistartionForm status=FAILURE method=ADTRequested_save_A...)</span>
+                <span class="method-start">33971 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_04_Verify_User_Can_Fill_ADT_Admission_Form(2, Admitting Diagnosis testing, Require Urgent Oxyzen, Blood require, All Done good, 1234, Overall g...)</span>
+                <span class="method-start">34145 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">FailedScreenShot([TestResult name=TC_04_Verify_User_Can_Fill_ADT_Admission_Form status=FAILURE method=ADTRequested_sa...)</span>
+                <span class="method-start">41455 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_05_Verify_Taht_User_is_Able_To_Add_Deposit_Against_Patient_Save_refund</span>
+                <span class="method-start">41608 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">FailedScreenShot([TestResult name=TC_05_Verify_Taht_User_is_Able_To_Add_Deposit_Against_Patient_Save_refund status=FA...)</span>
+                <span class="method-start">48952 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">49198 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Encounter_List_Advanced_Search_By_MRN">
+<parameter name="Uesrid" value="11092023"/>
+<test name="Encounter_List_Advanced_Search_By_MRN"> 
+			
+<classes>
+<class name="Test.Encounter_List_Advanced_Search_By_MRN">
+</class>
+</classes>
+</test>
+</suite>
